@@ -1,0 +1,13 @@
+import csv
+import os
+
+path_files = r"C:\Users\J\Desktop"
+os.chdir(path_files)
+
+list_0 = []
+str1 = open("sample.csv", "r").read()
+list_1 = str1.split("*")
+for a in list_1:
+    list_0.append([a])
+
+print(list_0)
